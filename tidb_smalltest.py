@@ -5,10 +5,10 @@ import mysql.connector
 def test():
     con = None
     try:
-        con = mysql.connector.connect(user='albertqa', password='84218421',
-                              host='192.168.10.212',
-                              port = '4000',
-                              database='albertqa_test', connection_timeout=7200)
+        con = mysql.connector.connect(user='user', password='password',
+                              host='host',
+                              port = 'port',
+                              database='db', connection_timeout=7200)
     except pyodbc.DatabaseError as e:
         print(e)
         return
@@ -17,8 +17,8 @@ def test():
     for j in range(10):
         cur.execute('select * from test_huge_book where book_id = ' + str(j).format(j))
         print('select * from test_huge_book where book_id = ' + str(j) + ' /* {} */'.format(j))
-        jepa = cur.fetchall()
-       #print('№ {}, Thread = {}, res {}'.format(j, threading.get_ident(), jepa))
+        ft = cur.fetchall()
+       #print('№ {}, Thread = {}, res {}'.format(j, threading.get_ident(), ft))
         # print('\n')
         #time.sleep(20000)
 

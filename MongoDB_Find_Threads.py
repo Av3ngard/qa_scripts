@@ -3,7 +3,7 @@ import threading
 #Step 1: Connect to MongoDB - Note: Change connection string as needed where "mongodb://youruser:password@instanceip:port/"
 def test():
     try:
-        client = MongoClient("mongodb://root:8421@192.168.10.180:27017/")
+        client = MongoClient("mongodb://user:password@host:port/")
     except pymongo.errors as e:
         print(e)
         return

@@ -12,37 +12,37 @@ class DatabaseType(object):
 # ----------------------------------------------------------------------------------------------------
 
 #g_database_type = DatabaseType.MSSQL
-#g_hostname = "192.168.10.113"
-#g_port = "1433"
-#g_database = "ds_audit"
-#g_login = "sa"
-#g_password = "84218421"
+#g_hostname = "********"
+#g_port = "****"
+#g_database = "*****"
+#g_login = "*****"
+#g_password = "*****"
 
 # g_database_type = DatabaseType.ORACLE
-# g_hostname = "192.168.10.113"
-# g_port = "1521"
-# g_database = "XEPDB1"
-# g_login = "test_albert"
-# g_password = "84218421"
+# g_hostname = "********"
+# g_port = "****"
+# g_database = "*****"
+# g_login = "*****"
+# g_password = "*****"
 
 #g_database_type = DatabaseType.POSTGRESQL
-#g_hostname = "alb-pg-trail.cjuqg4i5vbuu.us-east-2.rds.amazonaws.com"
-#g_port = "5432"
-#g_database = "test"
-#g_login = "postgres"
-#g_password = "84218421"
+#g_hostname = "********"
+#g_port = "****"
+#g_database = "*****"
+#g_login = "*****"
+#g_password = "*****"
 
-g_database_type = DatabaseType.MYSQL
-g_hostname = "albertqa-db.mysql.database.azure.com"
-g_port = "3306"
-g_database = "albertqa"
-g_login = "albertqa"
-g_password = "Armor-409"
+#g_database_type = DatabaseType.MYSQL
+#g_hostname = "********"
+#g_port = "****"
+#g_database = "*****"
+#g_login = "*****"
+#g_password = "*****"
 
 g_connections_count = 10
 g_queries_count = 1000
 g_pause_time = 0
-g_threads_count = 1
+g_threads_count = 10
 
 # ----------------------------------------------------------------------------------------------------
 
