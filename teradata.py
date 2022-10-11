@@ -16,7 +16,7 @@ def test():
 # execute SQL statement
     for j in range(10):
         cursor.execute('select * from mock_data /* {} */'.format(j))
-        #jepa = cursor.fetchall()
+        #ft = cursor.fetchall()
         print('select * from mock_data /* {} */'.format(j))
 # close cursor
         #cursor.close()
